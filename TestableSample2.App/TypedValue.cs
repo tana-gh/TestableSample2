@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace TestableSample2.App
 {
-    internal class TypedValue
+    public class TypedValue
     {
         public string   Value    { get; }
         public TypeKind TypeKind { get; }
@@ -20,7 +20,7 @@ namespace TestableSample2.App
             {
                 TypeKind = TypeKind.Bool;
             }
-            else if (Regex.IsMatch(value, @"^[0-9]+(\.[0-9]+)?$"))
+            else if (Regex.IsMatch(value, @"^-?[0-9]+(\.[0-9]+)?$"))
             {
                 TypeKind = TypeKind.Number;
             }
