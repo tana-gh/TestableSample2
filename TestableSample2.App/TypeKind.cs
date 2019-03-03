@@ -1,7 +1,7 @@
 
 namespace TestableSample2.App
 {
-    internal enum TypeKind
+    public enum TypeKind
     {
         Null,
         Bool,

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TestableSample2.App
 {
-    internal static class MainFlow
+    public static class MainFlow
     {
         public static async Task Run()
         {
